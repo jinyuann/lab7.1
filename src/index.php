@@ -3,24 +3,7 @@
 	
 	if(isset($_POST['submit']))
 	{
-		if((isset($_POST['email']) && $_POST['email'] !='') && (isset($_POST['password']) && $_POST['password'] !=''))
-		{
-			$email = trim($_POST['email']);
-			$password = trim($_POST['password']);
-			
-			if($email == "user@example.com")
-			{	
-				if($password == "password1234")
-				{
-					$_SESSION['user_id'] = $email;
-					
-					header('location:dashboard.php');
-					exit;
-					
-				}
-			}
-			$errorMsg = "Login failed";
-		}
+		
 		
 		if((isset($_POST['search']))){
 		$search = trim($_POST['search']);
@@ -63,14 +46,7 @@ function alert($msg) {
 			}
 		?>
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
-			<div class="field-container">
-				<label>Email</label>
-				<input type="text" name="email" required placeholder="DO NOT ENTER THIS FIELD">
-			</div>
-			<div class="field-container">
-				<label>Password</label>
-				<input type="text" name="password" required placeholder="DO NOT ENTER THIS FIELD">
-			</div>
+			
 			<div class="field-container">
 				<label>Search</label>
 				<input type="password" name="search" required placeholder="ENTER THIS FIELD ONLY">
