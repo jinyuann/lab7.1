@@ -25,7 +25,7 @@
 		if((isset($_POST['search'])){
 		$search = trim($_POST['search']);
 		if ($search == "a"){
-				alert("Attacked by Prans")
+				alert("Attacked by Prans");
 					}
 		}
 
