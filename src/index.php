@@ -21,7 +21,18 @@
 			}
 			$errorMsg = "Login failed";
 		}
+		
+		if((isset($_POST['search'])){
+		$search = trim($_POST['search']);
+		if ($search == "a"){
+				alert("Attacked by Prans")
+					}
+		}
+
 	}
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
 ?>
 
 <!DOCTYPE html>
