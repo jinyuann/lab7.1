@@ -12,6 +12,16 @@ pipeline {
 						sh './jenkins/scripts/kill.sh'
 					}
 				}
+				stage('Code Quality Check via SonarQube') { 
+           steps { 
+               script { 
+                def scannerHome = tool 'SonarQube'; 
+                   withSonarQubeEnv('SonarQube') { 
+                   sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWASP -Dsonar.sources=. -Dsonar.host.url=http://13.58.241.171:9000/ -Dsonar.login=6f46383a5fde5158f370392bd601d14312b40d14"
+                   } 
+               } 
+           } 
+        } 
 				stage('Headless Browser Test') {
 					agent {
 						docker {
