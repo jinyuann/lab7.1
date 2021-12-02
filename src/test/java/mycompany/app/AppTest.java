@@ -45,7 +45,7 @@ public class AppTest
 		//get web page
 		driver.get(url);
 		//wait until page is loaded or timeout error
-		wait.until(ExpectedConditions.titleContains("Login Page |")); 
+		wait.until(ExpectedConditions.titleContains("Login Page")); 
 
 		//enter input
 		driver.findElement(By.name("search")).sendKeys(invalidSearch);
