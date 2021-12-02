@@ -8,6 +8,7 @@
 		if((isset($_POST['search']))){
 		$search = trim($_POST['search']);
 		if (preg_match('/[^a-zA-Z0-9\s\-_\.\?]/',$search)){
+				$errorMsg = "Login failed";
 				alert("Attacked by Prans");
 					}
 		
