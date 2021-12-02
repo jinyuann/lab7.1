@@ -7,6 +7,9 @@
 		
 		if((isset($_POST['search']))){
 		$search = trim($_POST['search']);
+		if (preg_match('/[^a-zA-Z0-9\s\-_\.\?]',$search)){
+				alert("HASDHASHD");
+					}
 		if ($search == "a"){
 				alert("Attacked by Prans");
 					}
