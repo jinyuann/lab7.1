@@ -22,7 +22,7 @@
 			$errorMsg = "Login failed";
 		}
 		
-		if((isset($_POST['search'])){
+		if((isset($_POST['search']))){
 		$search = trim($_POST['search']);
 		if ($search == "a"){
 				alert("Attacked by Prans");
