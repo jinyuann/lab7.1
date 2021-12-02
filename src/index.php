@@ -27,14 +27,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Page | PHP Login and logout example with session</title>
+<title>Login Page</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	
 	<div class="container">
-		<h1>PHP Login and Logout with Session</h1>
+		<h1>PHP Search</h1>
 		<?php 
 			if(isset($errorMsg))
 			{
@@ -54,11 +54,15 @@
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 			<div class="field-container">
 				<label>Email</label>
-				<input type="email" name="email" required placeholder="Enter Your Email">
+				<input type="email" name="email" required placeholder="DO NOT ENTER THIS FIELD">
 			</div>
 			<div class="field-container">
 				<label>Password</label>
-				<input type="password" name="password" required placeholder="Enter Your Password">
+				<input type="password" name="password" required placeholder="DO NOT ENTER THIS FIELD">
+			</div>
+			<div class="field-container">
+				<label>Search</label>
+				<input type="password" name="search" required placeholder="ENTER THIS FIELD ONLY">
 			</div>
 			<div class="field-container">
 				<button type="submit" name="submit">Submit</button>
