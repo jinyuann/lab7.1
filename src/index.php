@@ -65,11 +65,11 @@ function alert($msg) {
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 			<div class="field-container">
 				<label>Email</label>
-				<input type="email" name="email" required placeholder="DO NOT ENTER THIS FIELD">
+				<input type="text" name="email" required placeholder="DO NOT ENTER THIS FIELD">
 			</div>
 			<div class="field-container">
 				<label>Password</label>
-				<input type="password" name="password" required placeholder="DO NOT ENTER THIS FIELD">
+				<input type="text" name="password" required placeholder="DO NOT ENTER THIS FIELD">
 			</div>
 			<div class="field-container">
 				<label>Search</label>
